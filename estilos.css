@@ -40,6 +40,7 @@ ul {
 
 .menu-secciones {
 	display: none;
+	margin: 0px 10px;
 }
 
 .menu-boton {
@@ -51,7 +52,6 @@ ul {
 	background-repeat: no-repeat;
 	background-color: transparent;
 	padding-left: 30px;
-	margin: 0px 10px;
 }
 
 .seccion-1 {
@@ -319,6 +319,7 @@ footer {
 	.menu-footer-secciones {
 		display: flex;
 		column-gap: 10px;
+		margin: 0px 10px;
 		
 	}
 
@@ -342,4 +343,4 @@ footer {
 		grid-template-areas:
 			"obra1 obra2"
 			"obra3 obra4";
-	}
+		}
