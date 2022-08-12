@@ -51,6 +51,7 @@ ul {
 	background-repeat: no-repeat;
 	background-color: transparent;
 	padding-left: 30px;
+	margin: 0px 10px;
 }
 
 .seccion-1 {
@@ -318,11 +319,13 @@ footer {
 	.menu-footer-secciones {
 		display: flex;
 		column-gap: 10px;
+		
 	}
 
 	.menu-footer-secciones a {
 		color: white;
 		text-decoration: none;
+		margin: 0px 10px;
 	}
 
 	a:hover {
