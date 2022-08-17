@@ -15,6 +15,11 @@ ul {
 	list-style: none;
 }
 
+h1, h2 {
+	font-weight: 700;
+	margin-top: 10px;
+}
+
 .menu {
 	background-color: black;
 }
@@ -67,6 +72,7 @@ ul {
 }
 
 .seccion-1-texto {
+	margin-top: 10px;
 	display: flex;
 	flex-wrap: wrap;
 	order: 2;
@@ -89,7 +95,7 @@ ul {
 }
 
 .seccion-1-img:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 	transition: 0.5s;
 }
 
@@ -116,11 +122,11 @@ ul {
 }
 
 
-.carousel a {
+.seccion-3 a {
 	text-decoration: none;
 	color: white;
 	background-color: black;
-	padding: 5px;
+	padding: 7px;
 }
 
 .seccion-4 {
