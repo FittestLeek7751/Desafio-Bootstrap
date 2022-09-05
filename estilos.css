@@ -15,6 +15,7 @@ ul {
   padding: 0;
   list-style: none; }
 
+<<<<<<< HEAD
 h1, h2, h5 {
   font-weight: 700;
   margin-top: 10px; }
@@ -22,6 +23,49 @@ h1, h2, h5 {
 .navbar {
   background-color: black; }
 
+=======
+h1 {
+  font-weight: 700;
+  margin-top: 10px; }
+
+h2 {
+  font-weight: 700;
+  margin-top: 10px; }
+
+.menu {
+  background-color: black; }
+
+.menu-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px; }
+
+.menu-logo {
+  display: flex;
+  margin-left: 20px; }
+
+.menu-accesos {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px; }
+
+.menu-secciones {
+  display: none;
+  margin: 0px 10px; }
+
+.menu-boton {
+  color: white;
+  border-width: 0px;
+  font-size: 20px;
+  background-image: url(icons/menu.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding-left: 30px; }
+
+>>>>>>> 49c0610667893026dbbd555c924da6d7801a6c5b
 .seccion-1 {
   display: flex;
   flex-wrap: wrap;
@@ -44,8 +88,12 @@ h1, h2, h5 {
     text-decoration: none;
     color: white;
     background-color: black;
+<<<<<<< HEAD
     padding: 8px;
     border-radius: 5px; }
+=======
+    padding: 5px; }
+>>>>>>> 49c0610667893026dbbd555c924da6d7801a6c5b
 
 .seccion-1-img {
   width: 300px;
@@ -71,15 +119,23 @@ h1, h2, h5 {
     text-decoration: none;
     color: white;
     background-color: black;
+<<<<<<< HEAD
     padding: 8px;
     border-radius: 5px; }
+=======
+    padding: 5px; }
+>>>>>>> 49c0610667893026dbbd555c924da6d7801a6c5b
 
 .seccion-3 a {
   text-decoration: none;
   color: white;
   background-color: black;
+<<<<<<< HEAD
   padding: 8px;
   border-radius: 5px; }
+=======
+  padding: 7px; }
+>>>>>>> 49c0610667893026dbbd555c924da6d7801a6c5b
 
 .seccion-4 {
   padding: 35px;
@@ -93,9 +149,13 @@ h1, h2, h5 {
   text-align: center; }
 
 .seccion-5 {
+<<<<<<< HEAD
   margin: 50px auto;
   display: flex;
   column-gap: 50px;
+=======
+  display: flex;
+>>>>>>> 49c0610667893026dbbd555c924da6d7801a6c5b
   align-items: center;
   flex-wrap: wrap;
   justify-content: center; }
@@ -104,14 +164,19 @@ h1, h2, h5 {
     text-decoration: none;
     color: white;
     background-color: black;
+<<<<<<< HEAD
     padding: 8px;
     border-radius: 5px; }
+=======
+    padding: 5px; }
+>>>>>>> 49c0610667893026dbbd555c924da6d7801a6c5b
 
 .seccion-5-texto {
   text-align: center; }
 
 .seccion-5-img {
   order: 2; }
+<<<<<<< HEAD
   .seccion-5-img img {
     width: 300px; }
 
@@ -119,6 +184,8 @@ h1, h2, h5 {
   padding: 0;
   background-color: transparent;
   margin: 5px; }
+=======
+>>>>>>> 49c0610667893026dbbd555c924da6d7801a6c5b
 
 footer {
   color: whitesmoke;
@@ -132,6 +199,7 @@ footer {
   display: none; }
 
 .titulo-galeria {
+<<<<<<< HEAD
   text-align: center;
   margin-top: 60px; }
 
@@ -152,6 +220,34 @@ footer {
   transition: all .6s ease; }
   .card-img-top:hover {
     transform: scale(1.05); }
+=======
+  text-align: center; }
+
+.galeria {
+  display: grid;
+  margin: 30px auto;
+  justify-content: center;
+  grid-column-gap: 40px;
+  grid-template-areas: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "obra1" "obra2" "obra3" "obra4"; }
+
+.pintura-1 {
+  grid-area: obra1;
+  text-align: center; }
+
+.pintura-2 {
+  grid-area: obra2;
+  text-align: center; }
+
+.pintura-3 {
+  grid-area: obra3;
+  text-align: center; }
+
+.pintura-4 {
+  grid-area: obra4;
+  text-align: center; }
+>>>>>>> 49c0610667893026dbbd555c924da6d7801a6c5b
 
 @media (min-width: 768px) {
   h1 {
@@ -160,6 +256,23 @@ footer {
   h2 {
     font-size: 40px;
     margin: 10px auto; }
+<<<<<<< HEAD
+=======
+  .menu {
+    display: flex;
+    justify-content: center; }
+  .menu-info {
+    flex-wrap: nowrap;
+    flex: 1; }
+  .menu-secciones {
+    display: flex;
+    column-gap: 20px; }
+    .menu-secciones a {
+      color: white;
+      text-decoration: none; }
+  .menu-boton {
+    display: none; }
+>>>>>>> 49c0610667893026dbbd555c924da6d7801a6c5b
   .seccion-1 {
     display: grid;
     justify-items: center;
@@ -194,10 +307,13 @@ footer {
     align-items: center; }
   .seccion-4-texto {
     width: 45%; }
+<<<<<<< HEAD
   .seccion-5-img {
     order: 0; }
     .seccion-5-img img {
       width: 400px; }
+=======
+>>>>>>> 49c0610667893026dbbd555c924da6d7801a6c5b
   footer {
     justify-content: space-around; }
   .menu-footer {
@@ -213,5 +329,16 @@ footer {
       margin: 0px 10px; }
   a:hover {
     color: palegreen; }
+<<<<<<< HEAD
   .galeria-obras {
     max-width: 90%; } }
+=======
+  .galeria {
+    display: grid;
+    margin: 30px auto;
+    justify-content: center;
+    grid-column-gap: 40px;
+    grid-template-areas: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "obra1 obra2" "obra3 obra4"; } }
+>>>>>>> 49c0610667893026dbbd555c924da6d7801a6c5b
