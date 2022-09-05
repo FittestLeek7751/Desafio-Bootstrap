@@ -1,6 +1,10 @@
 $color_botones: black;
 $color_enfasis: palegreen;
 
+@mixin fondo($color){
+	background-color: $color
+}
+
 html {
 	padding: 0;
 	margin: 0;
@@ -18,46 +22,13 @@ ul {
 	padding: 0;
 	list-style: none;
 }
-h1 {
+h1, h2, h5 {
 	font-weight: 700;
 	margin-top: 10px;
 }
-h2 {
-	font-weight: 700;
-	margin-top: 10px;
-}
-.menu {
-	background-color: black;
-}
-.menu-info {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	max-width: 1200px;
-}
-.menu-logo {
-	display: flex;
-	margin-left: 20px;
-}
-.menu-accesos {
-	flex: 1;
-	display: flex;
-	justify-content: flex-end;
-	margin-right: 30px;
-}
-.menu-secciones {
-	display: none;
-	margin: 0px 10px;
-}
-.menu-boton {
-	color: white;
-	border-width: 0px;
-	font-size: 20px;
-	background-image: url(icons/menu.png);
-	background-position: left center;
-	background-repeat: no-repeat;
-	background-color: transparent;
-	padding-left: 30px;
+
+.navbar{
+	background-color: black
 }
 .seccion-1 {
 	display: flex;
@@ -81,7 +52,8 @@ h2 {
 		text-decoration: none;
 		color: white;
 		background-color: $color_botones;
-		padding: 5px;
+		padding: 8px;
+		border-radius: 5px
 	}
 }
 .seccion-1-img {
@@ -108,16 +80,18 @@ h2 {
 	a {
 		text-decoration: none;
 		color: white;
-		background-color: $color_botones;
-		padding: 5px;
+		@include fondo($color_botones);
+		padding: 8px;
+		border-radius: 5px
 	}
 }
 .seccion-3 {
 	a {
 		text-decoration: none;
 		color: white;
-		background-color: $color_botones;
-		padding: 7px;
+		@include fondo($color_botones);
+		padding: 8px;
+		border-radius: 5px
 	}
 }
 .seccion-4 {
@@ -125,7 +99,7 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-color: lightgrey;
+	@include fondo(lightgrey);
 }
 .seccion-4-texto {
 	width: 80%;
@@ -137,9 +111,12 @@ h2 {
 		text-decoration: none;
 		color: white;
 		background-color: $color_botones;
-		padding: 5px;
+		padding: 8px;
+		border-radius: 5px
 	}
+	margin: 50px auto;
 	display: flex;
+	column-gap: 50px;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -149,10 +126,20 @@ h2 {
 }
 .seccion-5-img {
 	order: 2;
+	img {
+		width: 300px;
+	}
+}
+.botones-redes{
+	a{
+		padding: 0;
+		background-color: transparent;
+		margin: 5px;
+	}
 }
 footer {
 	color: whitesmoke;
-	background-color: black;
+	@include fondo(black);
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -163,32 +150,30 @@ footer {
 }
 .titulo-galeria {
 	text-align: center;
+	margin-top:60px
 }
-.galeria {
-	display: grid;
-	margin: 30px auto;
+.galeria-obras {
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	grid-column-gap: 40px;
-	grid-template-areas: auto;
-	grid-template-rows: auto auto auto auto;
-	grid-template-areas: "obra1" "obra2" "obra3" "obra4";
+	column-gap: 10px;
+	.pintura {
+		margin: 20px 5px;
+		overflow: hidden
+	}
 }
-.pintura-1 {
-	grid-area: obra1;
-	text-align: center;
+
+.card-img-top{
+	object-fit: cover;
+	width: 100%;
+    height: 350px;
+    transition: all .6s ease;
+    &:hover {
+    	transform: scale(1.05);
+    }
 }
-.pintura-2 {
-	grid-area: obra2;
-	text-align: center;
-}
-.pintura-3 {
-	grid-area: obra3;
-	text-align: center;
-}
-.pintura-4 {
-	grid-area: obra4;
-	text-align: center;
-}
+
 @media (min-width: 768px) {
 	h1 {
 		font-size: 40px;
@@ -198,25 +183,7 @@ footer {
 		font-size: 40px;
 		margin: 10px auto;
 	}
-	.menu {
-		display: flex;
-		justify-content: center;
-	}
-	.menu-info {
-		flex-wrap: nowrap;
-		flex: 1;
-	}
-	.menu-secciones {
-		display: flex;
-		column-gap: 20px;
-		a {
-			color: white;
-			text-decoration: none;
-		}
-	}
-	.menu-boton {
-		display: none;
-	}
+	
 	.seccion-1 {
 		display: grid;
 		justify-items: center;
@@ -261,6 +228,12 @@ footer {
 	.seccion-4-texto {
 		width: 45%;
 	}
+	.seccion-5-img {
+		order: 0;
+		img {
+			width: 400px;
+		}
+	}
 	footer {
 		justify-content: space-around;
 	}
@@ -283,13 +256,7 @@ footer {
 			color: $color_enfasis;
 		}
 	}
-	.galeria {
-		display: grid;
-		margin: 30px auto;
-		justify-content: center;
-		grid-column-gap: 40px;
-		grid-template-areas: auto;
-		grid-template-rows: auto auto auto auto;
-		grid-template-areas: "obra1 obra2" "obra3 obra4";
+	.galeria-obras {
+	max-width: 90%;
 	}
 }

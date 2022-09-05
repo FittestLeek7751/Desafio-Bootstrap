@@ -15,46 +15,12 @@ ul {
   padding: 0;
   list-style: none; }
 
-h1 {
+h1, h2, h5 {
   font-weight: 700;
   margin-top: 10px; }
 
-h2 {
-  font-weight: 700;
-  margin-top: 10px; }
-
-.menu {
+.navbar {
   background-color: black; }
-
-.menu-info {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1200px; }
-
-.menu-logo {
-  display: flex;
-  margin-left: 20px; }
-
-.menu-accesos {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 30px; }
-
-.menu-secciones {
-  display: none;
-  margin: 0px 10px; }
-
-.menu-boton {
-  color: white;
-  border-width: 0px;
-  font-size: 20px;
-  background-image: url(icons/menu.png);
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  padding-left: 30px; }
 
 .seccion-1 {
   display: flex;
@@ -78,7 +44,8 @@ h2 {
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 5px; }
+    padding: 8px;
+    border-radius: 5px; }
 
 .seccion-1-img {
   width: 300px;
@@ -104,13 +71,15 @@ h2 {
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 5px; }
+    padding: 8px;
+    border-radius: 5px; }
 
 .seccion-3 a {
   text-decoration: none;
   color: white;
   background-color: black;
-  padding: 7px; }
+  padding: 8px;
+  border-radius: 5px; }
 
 .seccion-4 {
   padding: 35px;
@@ -124,7 +93,9 @@ h2 {
   text-align: center; }
 
 .seccion-5 {
+  margin: 50px auto;
   display: flex;
+  column-gap: 50px;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center; }
@@ -133,13 +104,21 @@ h2 {
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 5px; }
+    padding: 8px;
+    border-radius: 5px; }
 
 .seccion-5-texto {
   text-align: center; }
 
 .seccion-5-img {
   order: 2; }
+  .seccion-5-img img {
+    width: 300px; }
+
+.botones-redes a {
+  padding: 0;
+  background-color: transparent;
+  margin: 5px; }
 
 footer {
   color: whitesmoke;
@@ -153,32 +132,26 @@ footer {
   display: none; }
 
 .titulo-galeria {
-  text-align: center; }
+  text-align: center;
+  margin-top: 60px; }
 
-.galeria {
-  display: grid;
-  margin: 30px auto;
+.galeria-obras {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-column-gap: 40px;
-  grid-template-areas: auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "obra1" "obra2" "obra3" "obra4"; }
+  column-gap: 10px; }
+  .galeria-obras .pintura {
+    margin: 20px 5px;
+    overflow: hidden; }
 
-.pintura-1 {
-  grid-area: obra1;
-  text-align: center; }
-
-.pintura-2 {
-  grid-area: obra2;
-  text-align: center; }
-
-.pintura-3 {
-  grid-area: obra3;
-  text-align: center; }
-
-.pintura-4 {
-  grid-area: obra4;
-  text-align: center; }
+.card-img-top {
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+  transition: all .6s ease; }
+  .card-img-top:hover {
+    transform: scale(1.05); }
 
 @media (min-width: 768px) {
   h1 {
@@ -187,20 +160,6 @@ footer {
   h2 {
     font-size: 40px;
     margin: 10px auto; }
-  .menu {
-    display: flex;
-    justify-content: center; }
-  .menu-info {
-    flex-wrap: nowrap;
-    flex: 1; }
-  .menu-secciones {
-    display: flex;
-    column-gap: 20px; }
-    .menu-secciones a {
-      color: white;
-      text-decoration: none; }
-  .menu-boton {
-    display: none; }
   .seccion-1 {
     display: grid;
     justify-items: center;
@@ -235,6 +194,10 @@ footer {
     align-items: center; }
   .seccion-4-texto {
     width: 45%; }
+  .seccion-5-img {
+    order: 0; }
+    .seccion-5-img img {
+      width: 400px; }
   footer {
     justify-content: space-around; }
   .menu-footer {
@@ -250,11 +213,5 @@ footer {
       margin: 0px 10px; }
   a:hover {
     color: palegreen; }
-  .galeria {
-    display: grid;
-    margin: 30px auto;
-    justify-content: center;
-    grid-column-gap: 40px;
-    grid-template-areas: auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "obra1 obra2" "obra3 obra4"; } }
+  .galeria-obras {
+    max-width: 90%; } }
