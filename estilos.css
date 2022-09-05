@@ -1,46 +1,38 @@
 html {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-}
+  font-family: 'Poppins', sans-serif; }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-}
+  font-family: 'Poppins', sans-serif; }
 
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 ul {
   padding: 0;
-  list-style: none;
-}
+  list-style: none; }
 
 h1,
 h2,
 h5 {
   font-weight: 700;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 .navbar {
-  background-color: black;
-}
+  background-color: black; }
 
 .seccion-1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
 
 .seccion-1-titulo {
-  margin: auto 20px;
-}
+  margin: auto 20px; }
 
 .seccion-1-texto {
   margin-top: 10px;
@@ -49,27 +41,21 @@ h5 {
   order: 2;
   width: 80%;
   text-align: justify;
-  justify-content: center;
-}
-
-.seccion-1-texto a {
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  padding: 8px;
-  border-radius: 5px;
-}
+  justify-content: center; }
+  .seccion-1-texto a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    border-radius: 5px; }
 
 .seccion-1-img {
   width: 300px;
   margin-top: 20px;
-  transition: 0.5s;
-}
-
-.seccion-1-img:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
+  transition: 0.5s; }
+  .seccion-1-img:hover {
+    transform: scale(1.1);
+    transition: 0.5s; }
 
 .seccion-2 {
   margin: 0px;
@@ -78,42 +64,35 @@ h5 {
   flex-wrap: wrap;
   justify-content: center;
   background: #eeaeca;
-  background: linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%);
-}
+  background: linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%); }
 
 .seccion-2-texto {
   width: 80%;
-  text-align: center;
-}
-
-.seccion-2-texto a {
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  padding: 8px;
-  border-radius: 5px;
-}
+  text-align: center; }
+  .seccion-2-texto a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    border-radius: 5px; }
 
 .seccion-3 a {
   text-decoration: none;
   color: white;
   background-color: black;
   padding: 8px;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
 .seccion-4 {
   padding: 35px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: lightgrey;
-}
+  background-color: lightgrey; }
 
 .seccion-4-texto {
   width: 80%;
-  text-align: center;
-}
+  text-align: center; }
 
 .seccion-5 {
   margin: 50px auto;
@@ -121,35 +100,27 @@ h5 {
   column-gap: 50px;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
-}
-
-.seccion-5 a {
-  margin: 10px;
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  padding: 8px;
-  border-radius: 5px;
-}
+  justify-content: center; }
+  .seccion-5 a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    border-radius: 5px; }
 
 .seccion-5-texto {
-  text-align: center;
-}
+  text-align: center; }
 
 .seccion-5-img {
-  order: 2;
-}
-
-.seccion-5-img img {
-  width: 300px;
-}
+  order: 2; }
+  .seccion-5-img img {
+    width: 300px; }
 
 .botones-redes a {
   padding: 0;
   background-color: transparent;
-  margin: 5px;
-}
+  margin: 5px; }
 
 footer {
   color: whitesmoke;
@@ -157,53 +128,40 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .menu-footer {
-  display: none;
-}
+  display: none; }
 
 .titulo-galeria {
   text-align: center;
-  margin-top: 60px;
-}
+  margin-top: 60px; }
 
 .galeria-obras {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 10px;
-}
-
-.galeria-obras .pintura {
-  margin: 20px 5px;
-  overflow: hidden;
-}
+  column-gap: 10px; }
+  .galeria-obras .pintura {
+    margin: 20px 5px;
+    overflow: hidden; }
 
 .card-img-top {
   object-fit: cover;
   width: 100%;
   height: 350px;
-  transition: all .6s ease;
-}
-
-.card-img-top:hover {
-  transform: scale(1.05);
-}
+  transition: all .6s ease; }
+  .card-img-top:hover {
+    transform: scale(1.05); }
 
 @media (min-width: 768px) {
   h1 {
     font-size: 40px;
-    margin: 10px auto;
-  }
-
+    margin: 10px auto; }
   h2 {
     font-size: 40px;
-    margin: 10px auto;
-  }
-
+    margin: 10px auto; }
   .seccion-1 {
     display: grid;
     justify-items: center;
@@ -212,86 +170,50 @@ footer {
     grid-column-gap: 20px;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    grid-template-areas: "titulo imagen""texto imagen";
-  }
-
+    grid-template-areas: "titulo imagen" "texto imagen"; }
   .seccion-1-titulo {
     display: flex;
     margin: auto;
-    grid-area: titulo;
-  }
-
+    grid-area: titulo; }
   .seccion-1-texto {
     display: flex;
-    grid-area: texto;
-  }
-
+    grid-area: texto; }
   .seccion-1-img {
-    grid-area: imagen;
-  }
-
+    grid-area: imagen; }
   .seccion-2 {
     flex-wrap: nowrap;
-    align-items: center;
-  }
-
+    align-items: center; }
   .seccion-2-texto {
     width: auto;
     text-align: center;
-    margin: 20px;
-  }
-
+    margin: 20px; }
   .seccion-3-texto {
-    width: 50%;
-  }
-
+    width: 50%; }
   .seccion-3-img {
-    width: 100%;
-  }
-
+    width: 100%; }
   .seccion-4 {
     column-gap: 60px;
-    align-items: center;
-  }
-
+    align-items: center; }
   .seccion-4-texto {
-    width: 45%;
-  }
-
+    width: 45%; }
   .seccion-5-img {
-    order: 0;
-  }
-
-  .seccion-5-img img {
-    width: 400px;
-  }
-
+    order: 0; }
+    .seccion-5-img img {
+      width: 400px; }
   footer {
-    justify-content: space-around;
-  }
-
+    justify-content: space-around; }
   .menu-footer {
     display: flex;
-    margin: 10px;
-  }
-
+    margin: 10px; }
   .menu-footer-secciones {
     display: flex;
     column-gap: 10px;
-    margin: 0px 10px;
-  }
-
-  .menu-footer-secciones a {
-    color: white;
-    text-decoration: none;
-    margin: 0px 10px;
-  }
-
+    margin: 0px 10px; }
+    .menu-footer-secciones a {
+      color: white;
+      text-decoration: none;
+      margin: 0px 10px; }
   a:hover {
-    color: palegreen;
-  }
-
+    color: palegreen; }
   .galeria-obras {
-    max-width: 90%;
-  }
-}
+    max-width: 90%; } }
